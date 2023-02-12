@@ -1,0 +1,8 @@
+image: python:3.9
+
+pipelines:
+  custom:
+    Deploy lambdafunction:
+      - variables:
+          - name: ACTION
+            default:plan
